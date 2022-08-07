@@ -1,0 +1,70 @@
+.header {
+  background-color: var(--textColor);
+  position: relative;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.hero .slogan {
+  font-size: 18px;
+  line-height: 8px;
+}
+.hero .discription {
+  line-height: 25px;
+  color: var(--mainColor);
+  width: 70%;
+  margin-top: 20px;
+}
+.dish{
+  z-index: 1;
+}
+.sahpe {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  opacity: 0.7;
+}
+.blob { 
+  left: 60%;
+  top: 10%;
+}
+.blob2 {
+  left: 58%;
+  top: 65%;
+  transform: rotate(20deg);
+}
+.blob3 {
+  left: 90%;
+  top: 10%;
+  transform: rotate(120deg);
+}
+.hero button {
+  background-color: var(--mainColor);
+  color: #FFF;
+  border: none;
+  width: 120px;
+  height: 50px;
+  margin-top: 30px;
+  border-radius: 64px;
+  cursor: pointer;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+.hero button:hover {
+  background-color: var(--secondColor);
+}
+@media screen and (max-width:800px) {
+  .hero {
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width:540px) {
+  .sahpe {
+    display: none;
+  }
+}

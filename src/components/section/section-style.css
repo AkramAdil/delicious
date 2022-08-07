@@ -1,0 +1,27 @@
+.meal-sec {
+    min-height: 400px;
+    background-color: var(--textColor);
+    text-align: center;
+    background-repeat: repeat;
+    background-size: contain;
+}
+.meal-name {
+    text-transform: capitalize;
+}
+.burgers {
+    background-image: url("../../assets//pattern2.svg");
+    
+}
+.pizza {
+    background-image: url("../../assets//x.svg");
+}
+.meals {
+    margin-top: 30px;
+    cursor: grab;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    gap: 5rem;
+    padding: 5rem;
+}

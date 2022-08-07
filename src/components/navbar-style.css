@@ -1,0 +1,38 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .links {
+  display: flex;
+}
+nav .links a {
+  text-decoration: none;
+  color: #FFF;
+}
+nav .links a:hover {
+  color: var(--mainColor);
+}
+nav .links a:not(:last-child) {
+  margin-right: 30px;
+
+}
+nav .logo {
+  height: 80px;
+  width: 190px;
+  cursor: pointer;
+}
+@media screen and (max-width:800px) {
+  nav .logo {
+    height: 59px;
+    width: 140px;
+  }
+}
+@media screen and (max-width:540px) {
+  nav {
+    flex-direction: column;
+  }
+  nav .links {
+    margin-top: 20px;
+  }
+}

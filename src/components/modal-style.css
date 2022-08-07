@@ -1,0 +1,64 @@
+.modal{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 32, 32);
+    backdrop-filter: blur(1.3px);
+    color: #FFF;
+    border-radius: 8px;
+    padding: 5px;
+    z-index: 10;
+    cursor: initial;
+    width: 45%;
+}
+.modal .close {
+    position: absolute;
+    right: 0;
+    margin: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 50;
+}
+.modal .close:hover{
+    color: #E84747;
+}
+.modal .head-img {
+    width: 100%;
+    height: 350px;
+}
+.modal .head-img img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.modal .meal-name {
+    margin: 15px;
+    color: #E84747;
+}
+.modal .ingrediants {
+    margin: 15px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    list-style: none;
+}
+.modal .ingrediants li {
+    width: 70px;
+    display: flex;
+    align-items: flex-start;
+    margin: 5px;
+}
+.modal .ingrediants li img {
+    width: 25px;
+    height: 25px;
+    margin: 2px;
+}
+@media screen and (max-width:800px) {
+    .modal {
+        width: 60%;
+    }
+}
+@media screen and (max-width:540px) {
+    .modal {
+        width: 80%;
+    }
+}

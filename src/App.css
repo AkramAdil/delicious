@@ -1,38 +1,59 @@
-.App {
+/*globla*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 0.5px;
+}
+::selection {
+  color: #FFF;
+  background: #990000;
+}
+h1 {
+  font-size: 70px;
+  color: #FFF;
+  font-family: 'Oswald', sans-serif;
+}
+img {
+  height: 100%;
+  width: 100%;
+}
+:root {
+  --textColor: #2B2E4A;
+  --mainColor: #E84747;
+  --secondColor: #990000;
+}
+/**/
+
+.sapcer{
+  aspect-ratio: 960/170;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.layer1 {
+  background-image: url("./assets/devider1.svg");
+}
+.layer2 {
+  background-image: url("./assets/deivder2.svg");
+}
+.intro {
   text-align: center;
+  background-color: #E84747;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.intro p {
+  padding: 0 20%;
+  margin-top: 20px;
+  color: #FFF;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+@media screen and (max-width:800px) {
+  h1 {
+    font-size: 40px;
   }
 }
